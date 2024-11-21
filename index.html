@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaFor-U Health</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #13a053;
+            padding: 15px 30px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .logo-text {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .user-info img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            color: white;
+            text-align: center;
+            padding: 120px 80px;
+            position: relative;
+        }
+
+        .hero img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .hero-content h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 36px;
+            line-height: 2.5;
+            margin-bottom: 25px;
+        }
+
+        .cta-btn {
+            background-color: #0d5644;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .cta-btn:hover {
+            background-color: #218838;
+        }
+
+        .mediasi {
+            padding: 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .mediasi h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .grid-item {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid-item img {
+            width: 100%; 
+            height: auto; 
+            max-width: 300px; 
+            border-radius: 10px;
+        }
+
+        .grid-item h3 {
+            margin: 10px 0;
+        }
+
+        .grid-item p {
+            font-size: 14px;
+            color: #0d5644;
+        }
+
+        footer {
+            background-color: #0d5644;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            padding: 20px;
+            max-width: 200px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 15px;
+        }
+
+        .footer-section p {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #ccc;
+        }
+
+        .copyright {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.jpg.png" alt="DaFor-U Logo">
+                <h1 class="logo-text">DaFor-U</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Mediasi</a></li>
+                    <li><a href="#">Feed</a></li>
+                    <li><a href="#">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="user-info">
+                <img src="ikon.png" alt="User Icon">
+                <span>Hi, Agita</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <img src="dokter.jpg.png" alt="Dokter Background">
+        <div class="hero-content">
+            <h2>Mau <br>
+                Mencurahkan Hati<br>
+                Lewat Lukisan?
+            </h2>
+            <button class="cta-btn">Join</button>
+        </div>
+    </section>
+
+    <section class="mediasi">
+        <h2>Mediasi</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="plank.jpg.jpg" alt="Plank">
+                <h3>Plank</h3>
+                <p>Lakukan gerakan plank selama 60 detik untuk meringankan pernapasan...</p>
+            </div>
+            <div class="grid-item">
+                <img src="peregangan.jpg.jpg" alt="Peregangan">
+                <h3>Peregangan</h3>
+                <p>Peregangan selama 6 menit di pagi hari dan malam hari dapat mem...</p>
+            </div>
+            <div class="grid-item">
+                <img src="squat.jpg.jpg" alt="Squat">
+                <h3>Squat</h3>
+                <p>Squat dapat dilakukan selama 30 detik atau 15 kali gerakan, hal ini...</p>
+            </div>
+            <div class="grid-item">
+                <img src="yoga.jpg" alt="Yoga">
+                <h3>Yoga</h3>
+                <p>Melakukan yoga dapat menenangkan hati dan pikiran yang baik untuk me...</p>
+            </div>
+            <div class="grid-item">
+                <img src="pemanasan.jpg" alt="Pemanasan">
+                <h3>Pemanasan</h3>
+                <p>Lakukan gerakan pemanasan selama 60 detik untuk...</p>
+            </div>
+            <div class="grid-item">
+                <img src="gayaberenang.jpg" alt="Gaya Berenang">
+                <h3>Gaya Berenang</h3>
+                <p>Berenang merupakan olahraga yang merilekskan tubuh, terdapat bebe...</p>
+            </div>
+            <div class="grid-item">
+                <img src="artwike1.jpg" alt="Artweek">
+                <h3>Artweek</h3>
+                <p>Lukisan abstrak dengan garis-garis dinamis dan warna-warna kuat yang meng...</p>
+            </div>
+            <div class="grid-item">
+                <img src="artwike2.jpg" alt="Artweek">
+                <h3>Artweek</h3>
+                <p>Lukisan penuh warna cerah seperti kuning, merah, dan oranye, dengan garis gar...</p>
+            </div>
+            <div class="grid-item">
+                <img src="artwike2.jpg" alt="Artweek">
+                <h3>Artweek</h3>
+                <p>Lukisan penuh warna cerah seperti kuning, merah, dan oranye, dengan garis gar...</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="logo">
+                    <img src="logo.jpg.png" alt="DaFor-U Logo">
+                    <h1 class="logo-text">DaFor-U</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod tempor volutpat ac.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Departments</h3>
+                <ul>
+                    <li><a href="#">Family Medicine</a></li>
+                    <li><a href="#">Cardiology</a></li>
+                    <li><a href="#">Neurology</a></li>
+                    <li><a href="#">Dermatology</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Our Doctors</a></li>
+                    <li><a href="#">Appointment</a></li>
+                    <li><a href="#">Blog Post</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Blog Post</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Etiam scelerisque...</p>
+            </div>
+        </div>
+        <p class="copyright">Copyright &copy; 2024 DaFor-U. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

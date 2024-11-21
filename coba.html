@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - AGIT</title>
+    <style>
+        body {
+            background-image: url('coklat.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh; 
+            margin: 0; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        form {
+            width: 80%;
+            max-width: 400px;
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 20px;
+            border-radius: 10px;
+        }
+        label {
+            margin-bottom: 5px;
+            display: block;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login to AGIT</h1>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Login</button>
+    </form>
+
+       <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="logo">
+                    <img src="logo.jpg.png" alt="DaFor-U Logo">
+                    <h1 class="logo-text">DaFor-U</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod tempor volutpat ac.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Departments</h3>
+                <ul>
+                    <li><a href="#">Family Medicine</a></li>
+                    <li><a href="#">Cardiology</a></li>
+                    <li><a href="#">Neurology</a></li>
+                    <li><a href="#">Dermatology</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Our Doctors</a></li>
+                    <li><a href="#">Appointment</a></li>
+                    <li><a href="#">Blog Post</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Blog Post</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Etiam scelerisque...</p>
+            </div>
+        </div>
+        <p class="copyright">Copyright &copy; 2024 DaFor-U. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaFor-U Health</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #13a053;
+            padding: 15px 30px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .logo-text {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .user-info img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+
+        .content-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin: 40px;
+        }
+
+        .content-left {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .content-left h2 {
+            font-size: 32px;
+            color: #333;
+        }
+
+        .content-left p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+
+        .content-right {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .content-right img {
+            width: 500px;
+            height: 500px;
+        }
+
+        footer {
+            background-color: #0d5644;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            padding: 20px;
+            max-width: 200px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 15px;
+        }
+
+        .footer-section p {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #ccc;
+        }
+
+        .copyright {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.jpg.png" alt="DaFor-U Logo">
+                <h1 class="logo-text">DaFor-U</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Mediasi</a></li>
+                    <li><a href="#">Feed</a></li>
+                    <li><a href="#">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="user-info">
+                <img src="ikon.png" alt="User Icon">
+                <span>Hi, Agita</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-container">
+        <div class="content-left">
+            <h2>Tentang</h2>
+            <p>DAFOR-U adalah platform inovatif yang didedikasikan untuk mendukung kesehatan mental anak remaja.Kami memahami bahwa masa remaja adalah periode penuh tantangan, dan penting untuk menyediakan ruang yang aman bagi mereka untuk mengungkapkan perasaan, mencari bantuan, dan menemukan sumber daya yang bermanfaat.Website ini menawarkan berbagai fitur, termasuk artikel informatif, panduan tentang masalah kesehatan mental, serta forum komunitas yang memungkinkan remaja berbagi pengalaman dan dukungan satu sama lain. Selain itu, DAFOR-U juga menyediakan akses ke profesional kesehatan mental melalui sesi konsultasi online. </p>
+        </div>
+        <div class="content-right">
+            <img src="logo.jpg.png" alt="Large Logo">
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="logo">
+                    <img src="logo.jpg.png" alt="DaFor-U Logo">
+                    <h1 class="logo-text">DaFor-U</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod tempor volutpat ac.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Departments</h3>
+                <ul>
+                    <li><a href="#">Family Medicine</a></li>
+                    <li><a href="#">Cardiology</a></li>
+                    <li><a href="#">Neurology</a></li>
+                    <li><a href="#">Dermatology</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Our Doctors</a></li>
+                    <li><a href="#">Appointment</a></li>
+                    <li><a href="#">Blog Post</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Blog Post</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Etiam scelerisque...</p>
+            </div>
+        </div>
+        <p class="copyright">Copyright &copy; 2024 DaFor-U. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

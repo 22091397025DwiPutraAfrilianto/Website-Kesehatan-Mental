@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .logo-text {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #13a053;
+            padding: 15px 30px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            background-color: #e0f2f1;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 50px;
+            width: 400px;
+            position: relative;
+            margin: 100px auto; 
+        }
+
+        .container:before {
+            content: "";
+            background: url('https://via.placeholder.com/500'); 
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            border-radius: 10px;
+            opacity: 0.2;
+            background-size: cover;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .password-toggle {
+            position: relative;
+        }
+
+        .password-toggle input {
+            padding-right: 40px;
+        }
+
+        .password-toggle .toggle-icon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            background-color: #43a047;
+        }
+
+        .signin-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .signin-link a {
+            color: #4caf50;
+            text-decoration: none;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #4caf50; 
+            padding: 40px 20px;
+            color: white;
+        }
+
+        .footer-left {
+            font-size: 14px;
+        }
+
+        .footer-right a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 14px;
+        }
+
+        .footer-right a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.jpg.png" alt="DaFor-U Logo">
+                <h1 class="logo-text">DaFor-U</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Exhibitions</a></li>
+                    <li><a href="#">Collection</a></li>
+                    <li><a href="#">Happenings</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Info</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Sign Up Account</h2>
+        <form>
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" placeholder="Enter your first name">
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" placeholder="Enter your last name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label for="password">Password</label>
+            <div class="password-toggle">
+                <input type="password" id="password" placeholder="Enter your password">
+                <span class="toggle-icon" onclick="togglePassword()">👁️</span>
+            </div>
+
+            <label for="confirm-password">Confirm Password</label>
+            <div class="password-toggle">
+                <input type="password" id="confirm-password" placeholder="Enter your confirm password">
+                <span class="toggle-icon" onclick="toggleConfirmPassword()">👁️</span>
+            </div>
+
+            <button type="submit" class="btn-submit">Sign Up</button>
+
+            <div class="signin-link">
+                <p>Already have an account? <a href="#">Sign In</a></p>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="footer-left">
+            <p>Copyright 2024 DaFor-U</p>
+        </div>
+        <div class="footer-right">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <script>
+        function togglePassword() {
+            const passwordField = document.getElementById('password');
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+            } else {
+                passwordField.type = 'password';
+            }
+        }
+
+        function toggleConfirmPassword() {
+            const confirmPasswordField = document.getElementById('confirm-password');
+            if (confirmPasswordField.type === 'password') {
+                confirmPasswordField.type = 'text';
+            } else {
+                confirmPasswordField.type = 'password';
+            }
+        }
+    </script>
+</body>
+</html>
